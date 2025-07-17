@@ -2,16 +2,16 @@
 This is a text based adventure game to help me study and learn Go.
 
 ## Minimum Game Features
-[ ] Player Classes
-[ ] Player Inventory 
-[ ] Weapons
-[ ] Armor
-[ ] Potions
-[ ] Spells
-[ ] Basic Story
-[ ] Movement
-[ ] Leveling
-[ ] Combat
+- [ ] Player Classes
+- [ ] Player Inventory 
+- [ ] Weapons
+- [ ] Armor
+- [ ] Potions
+- [ ] Spells
+- [ ] Basic Story
+- [ ] Movement
+- [ ] Leveling
+- [ ] Combat
 
 ## Extra Features
 To Be Announced
