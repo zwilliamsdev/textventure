@@ -1,8 +1,10 @@
 package player
 
 type PlayerClass interface {
-	ClassName() string
+	GetClass() string
 	GetStartingHealth() int
+	// Return resource type and amount
+	// Warrior: rage, mage: mana etc.
 	GetStartingResource() (string, int)
 	PerformAbility(p *Player) string
 }
@@ -24,7 +26,7 @@ type Player struct {
 // Warrior
 type Warrior struct{}
 
-func (w Warrior) ClassName() string {
+func (w Warrior) GetClass() string {
 	return "Warrior"
 }
 
@@ -34,4 +36,19 @@ func (w Warrior) GetStartingHealth() int {
 
 func (w Warrior) GetStartingResource() (string, int) {
 	return "Rage", 0
+}
+
+// Mage
+type Mage struct{}
+
+func (m Mage) GetClass() string {
+	return "Mage"
+}
+
+func (m Mage) GetStartingHealth() int {
+	return 100
+}
+
+func (m Mage) GetStartingResource() (string, int) {
+	return "Mana", 75
 }
